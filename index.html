@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <!--<link rel="stylesheet" type="text/css" href="css/styleSheet.css" />-->
+    <link href="css/style1024.css" rel="stylesheet" type="text/css"
+          media="only screen and (min-width: 1024px)">
+    <link href="css/style768.css" rel="stylesheet" type="text/css"
+          media="only screen and (min-width: 768px) and (max-width: 1023px)">
+    <link href="css/style568.css" rel="stylesheet" type="text/css"
+          media="only screen and (min-width: 568px) and (max-width: 767px)">
+    <link href="css/style320.css" rel="stylesheet" type="text/css"
+          media="only screen and (min-width: 320px) and (max-width: 567px)">
+    <title></title>
+</head>
+<body>
+    <div id="mainDiv">
+        <div id="section1BG">
+            <div id="topBorder"></div>
+            <img id="logoHolder" src="images/logoHolder.png" />
+            <h1 id="title">Renty</h1>
+
+            <div id="section1">
+                <div id="topBar">
+                    <div id="leftsidetop">
+                        <img id="phoneIcon" src="images/phoneIcon.png" />
+                        <p id="phoneNumber">Call Us Now at (0) 1234-56789</p>
+                    </div>
+                    <div id="rightSideTop">
+                        <div id="rightSideTop">
+                            <a class="socialLink" href="emptyLink"><img src="images/tumblr.png" /></a>
+                            <a class="socialLink" href="emptyLink"><img src="images/twitter.png" /></a>
+                            <a id="facebookLink" class="socialLink" href="emptyLink"><img src="images/facebook.png" /></a>
+                            <div id="loginLinks"><a id="loginLink" href="emptyLink">Login</a> | <a href="emptyLink">Register</a></div>
+                            <div class="selectLanguage">
+                                <select>
+                                    <option value="1">English</option>
+                                    <option value="2">German</option>
+                                    <option value="2">French</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="searchAndBase">
+                        <div id="searchBar">
+                            <div id="checkTopBorder"></div>
+                            <h2 id="searchHeader">Search & get the car now, book it we will deliver it.</h2>
+
+                            <div class="inputDiv">
+                                <select class="inputSelect" onchange="document.getElementById('displayCar').value = this.options[this.selectedIndex].text; document.getElementById('idCar').value = this.options[this.selectedIndex].value;">
+                                    <option></option>
+                                    <option>Ford</option>
+                                    <option>Pegeot</option>
+                                    <option>Renault</option>
+                                </select>
+                                <input type="text" name="displayCar" placeholder="Car" id="displayCar" class="inputText" onfocus="this.select()" />
+                                <input type="hidden" name="idCar" id="idCar" />
+                            </div>
+
+
+                            <div class="inputDiv">
+                                <select class="inputSelect" onchange="document.getElementById('displayCity').value = this.options[this.selectedIndex].text; document.getElementById('idCity').value = this.options[this.selectedIndex].value;">
+                                    <option></option>
+                                    <option>London</option>
+                                    <option>Edinburg</option>
+                                    <option>New Hampshire</option>
+                                </select>
+                                <input type="text" name="displayCity" placeholder="City" id="displayCity" class="inputText" onfocus="this.select()" />
+                                <input type="hidden" name="idCity" id="idCity" />
+                            </div>
+
+                            <input class="inputMap" id="inputMap" type="text" placeholder="delivery location" />
+                            <input class="inputMap" type="text" placeholder="pick-up location" />
+                            <input id="datePicker" class="inputField" type="date" placeholder="dd/mm/yyyy" />
+                            <input id="timePicker" class="inputField" type="time" value="01:00" />
+                            <a id="bookButton" href="emptyLink">Book Your Taxi Now</a>
+                        </div>
+
+                        <div id="base">
+                            <h1 id="mainHeader">Book it, Get it <br /> One Call that’s all!</h1>
+                            <ul id="mainList">
+                                <li>Proin gravida nibh vel velit auctor aliquet sollicitudin</li>
+                                <li>Qnec sagittis bibendum auctor sem nibh id</li>
+                                <li>Rit amet nibh vulputate cursus nisi elit</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <div id="sec2Inner">
+                <table id="leftSideTable">
+                    <tr>
+                        <td class="cellWithBottomSpace">
+                            <div class="leftSideIconAbout">
+                                <a href="emptyLink"><img class="aboutImage" src="images/lockIcon.png"></a>
+                            </div>
+                            <div class="rightSideIconAbout">
+                                <h3 class="aboutHeader">Delivery Booking</h3>
+                                <h4 class="aboutSubHeader">We ensure safest booking!</h4>
+                                <p class="aboutParagraph">Morbi accumsan ipsum velit. Nam nec tellus a odio cidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="leftSideIconAbout">
+                                <a href="emptyLink"><img class="aboutImage" src="images/chatIcon.png"></a>
+                            </div>
+                            <div class="rightSideIconAbout">
+                                <h3 class="aboutHeader">Customer Service</h3>
+                                <h4 class="aboutSubHeader">We ensure customer service!</h4>
+                                <p class="aboutParagraph">Morbi accumsan ipsum velit. Nam nec tellus a odio cidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table id="rightSideTable">
+                    <tr>
+                        <td class="cellWithBottomSpace">
+                            <div class="leftSideIconAbout">
+                                <a href="emptyLink"><img class="aboutImage" src="images/humanIcon.png"></a>
+                            </div>
+                            <div class="rightSideIconAbout">
+                                <h3 class="aboutHeader">Reliable Service</h3>
+                                <h4 class="aboutSubHeader">We ensure reliable service!</h4>
+                                <p class="aboutParagraph">Morbi accumsan ipsum velit. Nam nec tellus a odio cidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="leftSideIconAbout">
+                                <a href="emptyLink"><img class="aboutImage" src="images/globeIcon.png"></a>
+                            </div>
+                            <div class="rightSideIconAbout">
+                                <h3 class="aboutHeader">No fees Charges</h3>
+                                <h4 class="aboutSubHeader">We ensure no fees charges!</h4>
+                                <p class="aboutParagraph">Morbi accumsan ipsum velit. Nam nec tellus a odio cidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="section3BG">
+            <div id="section3">
+                <h3 id="sec3Header">Cars You’d Love</h3>
+                <h4 id="sec3SubHeader">Look at the wonderful Category</h4>
+                <div class="slider">
+                    <input type="radio" id="control1" name="controls" checked="checked" />
+                    <input type="radio" id="control2" name="controls" />
+                    <input type="radio" id="control3" name="controls" />
+                    <input type="radio" id="control4" name="controls" />
+                    <div class="sliderinner">
+                        <ul>
+                            <li>
+                                <label id="leftControl" for="control4"></label>
+                                <label id="rightControl" for="control2"></label>
+                                <div id="sliderItem">
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/orangeSkies.png" />
+                                        <div class="descriptionText">
+                                            <h5>Orange Skies</h5>
+                                            <p>Save upto 50%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/greenFields.png" />
+                                        <div class="descriptionText">
+                                            <h5>Green Fields</h5>
+                                            <p>Save upto 75%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/blueOcean.png" />
+                                        <div class="descriptionText">
+                                            <h5>Blue Ocean</h5>
+                                            <p>Save upto 80%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label id="leftControl" for="control1"></label>
+                                <label id="rightControl" for="control3"></label>
+                                <div id="sliderItem">
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/orangeSkies.png" />
+                                        <div class="descriptionText">
+                                            <h5>Orange Skies</h5>
+                                            <p>Save upto 50%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/greenFields.png" />
+                                        <div class="descriptionText">
+                                            <h5>Green Fields</h5>
+                                            <p>Save upto 75%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/blueOcean.png" />
+                                        <div class="descriptionText">
+                                            <h5>Blue Ocean</h5>
+                                            <p>Save upto 80%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label id="leftControl" for="control2"></label>
+                                <label id="rightControl" for="control4"></label>
+                                <div id="sliderItem">
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/orangeSkies.png" />
+                                        <div class="descriptionText">
+                                            <h5>Orange Skies</h5>
+                                            <p>Save upto 50%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/greenFields.png" />
+                                        <div class="descriptionText">
+                                            <h5>Green Fields</h5>
+                                            <p>Save upto 75%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/blueOcean.png" />
+                                        <div class="descriptionText">
+                                            <h5>Blue Ocean</h5>
+                                            <p>Save upto 80%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label id="leftControl" for="control3"></label>
+                                <label id="rightControl" for="control1"></label>
+                                <div id="sliderItem">
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/orangeSkies.png" />
+                                        <div class="descriptionText">
+                                            <h5>Orange Skies</h5>
+                                            <p>Save upto 50%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/greenFields.png" />
+                                        <div class="descriptionText">
+                                            <h5>Green Fields</h5>
+                                            <p>Save upto 75%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="description">
+                                        <div class="overlay"></div>
+                                        <img src="images/blueOcean.png" />
+                                        <div class="descriptionText">
+                                            <h5>Blue Ocean</h5>
+                                            <p>Save upto 80%</p>
+                                            <a href="emptyLink">Avail Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="section4">
+            <div id="sec4Inner">
+                <table id="DoubleColumn">
+                    <tr>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/privatCar.png">
+                                <p>Private Car</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/motorbike.png">
+                                <p>Motorbike</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/snowBike.png">
+                                <p>Snow Bike</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/tractor.png">
+                                <p>Tractor</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table id="DoubleColumn">
+                    <tr>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/miniCar.png">
+                                <p>Minicar</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/miniTruck.png">
+                                <p>Mini Truck</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/largeVehicle.png">
+                                <p>Large Vehicle</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/motorbike.png">
+                                <p>Motorbike</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <table id="SingleColumn">
+                    <tr>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/boat.png">
+                                <p>Boat</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="sec4cell">
+                            <div>
+                                <img src="images/bigTruck.png">
+                                <p>Big Truck</p>
+                                <a href="emptyLink">Book Now</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="footerBG">
+            <div id="footer">
+                <div id="footerLinks">
+                    <div id="aboutUs">
+                        <h6>About Us</h6>
+                        <div>
+                            <a href="emptyLink">About</a><br />
+                            <a href="emptyLink">Services</a><br />
+                            <a href="emptyLink">Career</a><br />
+                            <a href="emptyLink">Media</a><br />
+                            <a href="emptyLink">Adverise</a><br />
+                            <a href="emptyLink">Fleet</a><br />
+                            <a href="emptyLink">Tariff</a><br />
+                            <a href="emptyLink">Partners</a><br />
+                            <a href="emptyLink">About</a><br />
+                        </div>
+                        <div>
+                            <a href="emptyLink">My Account</a><br />
+                            <a href="emptyLink">Print Notice</a><br />
+                            <a href="emptyLink">Vehicle Guide</a><br />
+                            <a href="emptyLink">Easy Cabs</a><br />
+                            <a href="emptyLink">About</a><br />
+                            <a href="emptyLink">Services</a><br />
+                            <a href="emptyLink">Career</a><br />
+                            <a href="emptyLink">Media</a><br />
+                        </div>
+                    </div>
+                    <div id="Melbourne">
+                        <div>
+                            <h6>Melbourne</h6>
+                        </div>
+                        <div>
+                            <a href="emptyLink">97-99 Isabella St</a><br />
+                            <a href="emptyLink">London SE1 8DD</a><br />
+                            <a href="emptyLink">United Kingdom</a><br />
+                        </div>
+                        <div id="Queensland">
+                            <div>
+                                <h6>Queensland</h6>
+                            </div>
+                            <div>
+                                <a href="emptyLink">Columbo House</a><br />
+                                <a href="emptyLink">50-60 Blackfriars Rd</a><br />
+                                <a href="emptyLink">Blackfriars, London.</a><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Sydney">
+                        <h6>Sydney</h6>
+                        <div>
+                            <a href="emptyLink">14 Gambia St</a><br />
+                            <a href="emptyLink">Waterloo</a><br />
+                            <a href="emptyLink">London SE1 0XH, UK</a><br />
+                        </div>
+                    </div>
+                    <div id="map">
+                        <div id="florida">
+                            <img src="images/bubbleLeft.png" />
+                            <p>Florida</p>
+                        </div><div id="egypt">
+                            <img src="images/bubbleTop.png" />
+                            <p>Egypt</p>
+                        </div><div id="sydney">
+                            <img src="images/bubbleRight.png" />
+                            <p>Sydney</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footerSocial">
+                    <a href="emptyLink"><img src="images/footerFacebook.png" /></a>
+                    <a href="emptyLink"><img src="images/footerTwitter.png" /></a>
+                    <a href="emptyLink"><img src="images/footerTumblr.png" /></a>
+                    <a href="emptyLink"><img src="images/footerSkype.png" /></a>
+                    <a href="emptyLink"><img src="images/footerYoutube.png" /></a>
+                </div>
+                <div id="copyRight">
+                    <p>taksi © Copyright 2014 | All Rights Rerved  | Designed by DesinousPWR</p>
+                </div>
+                <div id="footerBorder"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
